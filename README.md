@@ -1,3 +1,3 @@
 # calculadora simples 
 
-- calculadora simples desnevolvida com html css e javaScript
+- calculadora simples desenvolvida com html css e javaScript
