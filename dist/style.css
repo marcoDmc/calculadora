@@ -1,3 +1,6 @@
+/*!********************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./public/index.css ***!
+  \********************************************************************/
 * {
     padding: 0;
     margin: 0;
@@ -45,29 +48,28 @@
     box-shadow: 0 0 30px #000;
   }
   .theme-toggler {
-    position: absolute;
+    position: relative;
     top: 30px;
     left: 30px;
-    color: #fff;
+    color:#fff;
     cursor: pointer;
+    transform: translate(-155px,-10px);
+    
     z-index: 1;
-  }
-  .theme-toggler.active {
+  } */
+   .theme-toggler.active {
     color: #333;
   }
-  .theme-toggler.active::before {
-    background-color: #fff;
-  }
+
   .theme-toggler::before {
     content: "";
-    height: 30px;
-    width: 30px;
+    height: 40px;
+    width: 40px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 50%;
-    background-color: #333;
     z-index: -1;
   }
   #display {
@@ -107,16 +109,16 @@
     color: #0a1e23;
   }
   .calculator button#clear {
-    background-color: #fef2f3;
-    color: #f75f68;
+    background-color: #211D26;
+    color: #ffff;
   }
   .calculator button.btn-number {
-    background-color: #f8fafb;
-    color: #2f3334;
+    background-color: rgb(207, 206, 206);
+    color: #4c0f9b;
   }
   .calculator button.btn-operator {
-    background-color: #fff4fe;
-    color: #f967f3;
+    background-color: #4c0f9b;
+    color: #04D94F;
   }
   
   .calculator button#equale {
@@ -143,20 +145,33 @@
     color: #f365ee;
   }
   
-  /* code with love */
-  .code-with-love {
-    position: fixed;
-    right: 30px;
-    bottom: 50px;
-    border-radius: 5px;
-    background-color: #111;
-    padding: 10px;
-    color: #fff;
-    z-index: 99999999;
+
+  .moon{
+    position:absolute;
+    transform: translateX(0px);
+    width: 40px;
+    height: 40px;
+    padding:5px;
+    /* border: 1px solid white; */
+    border-radius: 50%;
+    color: rgb(255, 217, 0);
+  }
+
+  .moonOf{
+    display:none;
   }
   
-  .code-with-love i.fa-heart,
-  .code-with-love span {
-    color: #ff2828;
+
+  .sun{
+    position:absolute;
+    transform: translateX(0px);
+    width: 40px;
+    height: 40px;
+    padding:5px;
+    /* border: 1px solid white; */
+    border-radius: 50%;
+    color: rgb(119, 0, 255)
   }
-  
+  .sunOf{
+    display: none;
+  }
